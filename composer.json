@@ -1,0 +1,12 @@
+{
+    "name": "quetes_twig/twig",
+    "authors": [
+        {
+            "name": "GuillaumeWCS2",
+            "email": "skrguillaume@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.12"
+    }
+}

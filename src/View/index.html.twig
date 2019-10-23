@@ -1,0 +1,19 @@
+
+{% extends "base.html.twig" %}
+
+{% block title %} Page cards {% endblock %}
+
+{% block content %}
+<div class="container">
+    <ul class="list-group list-group-horizontal">
+        <div class="row">
+        {% for product in products_list %}
+                <div class="card-group col-lg-4">
+                    <li class="list-group-item">{{ product }}</li>
+                </div>
+
+        {% endfor %}
+        </div>
+    </ul>
+</div>
+{% endblock %}

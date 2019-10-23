@@ -1,0 +1,26 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %} Titre de la page {% endblock %}</title>
+    <link rel="icon" href="/assets/images/favicon.png">
+    {% block stylesheet %}
+        <div class="test">
+    <!-- appel éventuel du CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+        </div>
+    {% endblock %}
+</head>
+
+<body>
+{% block content %}{% endblock %}
+{% block javascript %}
+<-- appel éventuel du JS Jquery et Bootstrap -->
+{% endblock %}
+
+
+</body>
+</html>
